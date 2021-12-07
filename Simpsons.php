@@ -33,7 +33,7 @@
                                     Select characters to show
                                 </h3>
 
-                                <form method="get">
+                                <form method="post" action='characters.php'>
 
                                     <ul class="form__items">
                                                                                     <li class="form__item">

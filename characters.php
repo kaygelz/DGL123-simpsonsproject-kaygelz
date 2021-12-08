@@ -1,5 +1,6 @@
 <?php
 
+//create character cards
 $homer = [
     'first_name' => 'Homer',
     'last_name' => 'Simpson',
@@ -52,14 +53,23 @@ $marge = [
     'image' => 'images/moe.png'
     ];
 
-    
-    $character = $_POST['bart'];
-    $character = $_POST['homer'];
-    $character = $_POST['maggie'];
-    $character = $_POST['marge'];
-    $character = $_POST['lisa'];
-    $character = $_POST['moe'];
+    ///create multidimensional array
+    $characters = [
+        'Bart' => $bart,
+        'Homer' => $homer,
+        'Marge' => $marge,
+        'Lisa' => $lisa,
+        'Maggie' => $maggie, 
+        'moe' => $moe
+    ];
+
+
+
+
 
 
 
 ?>
+
+
+

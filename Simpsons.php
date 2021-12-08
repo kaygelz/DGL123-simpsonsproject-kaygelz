@@ -41,7 +41,7 @@
                                                 <label for="homer">
                                                     Homer Simpson                                                </label>
 
-                                                <input id="homer" type="checkbox" name="homer">
+                                                <input id="homer" type="checkbox" name="homer" value="homer">
                                                                                                                                
                                             </li>
                                                                                     <li class="form__item">
@@ -49,7 +49,7 @@
                                                 <label for="marge">
                                                     Marge Simpson                                                </label>
 
-                                                <input id="marge" type="checkbox" name="marge"
+                                                <input id="marge" type="checkbox" name="marge" value="marge">
                                                                                                                                
                                             </li>
                                                                                     <li class="form__item">
@@ -57,7 +57,7 @@
                                                 <label for="bart">
                                                     Bart Simpson                                                </label>
 
-                                                <input id="bart" type="checkbox" name="bart"
+                                                <input id="bart" type="checkbox" name="bart value="bart"
                                                                                                 >                                
                                             </li>
                                                                                     <li class="form__item">
@@ -65,7 +65,7 @@
                                                 <label for="lisa">
                                                     Lisa Simpson                                                </label>
 
-                                                <input id="lisa" type="checkbox" name="lisa"
+                                                <input id="lisa" type="checkbox" name="lisa" value="lisa"
                                                                                                 >                                
                                             </li>
                                                                                     <li class="form__item">
@@ -73,7 +73,7 @@
                                                 <label for="maggie">
                                                     Maggie Simpson                                                </label>
 
-                                                <input id="maggie" type="checkbox" name="maggie"
+                                                <input id="maggie" type="checkbox" name="maggie value="maggie"
                                                                                                 >                                
                                             </li>
                                                                                     <li class="form__item">
@@ -81,7 +81,7 @@
                                                 <label for="moe">
                                                     Moe Szyslak                                                </label>
 
-                                                <input id="moe" type="checkbox" name="moe"
+                                                <input id="moe" type="checkbox" name="moe" value="moe"
                                                                                                 >                                
                                             </li>
                                                                             </ul>

@@ -73,10 +73,10 @@ $marge = [
 
 
 
-if(isset($_POST) AND is_array($_POST)) {
-    foreach ($_POST as $character) {
-        print "$character";
-    }
+    if(isset($_POST) AND is_array($_POST)) {
+        foreach ($_POST as $characters) {
+            print "$characters";
+        }
 }
 
 

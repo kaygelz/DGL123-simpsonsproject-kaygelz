@@ -1,5 +1,13 @@
 <?php
 
+$BART = $_POST['bart'];
+$HOMER = $_POST['homer'];
+$MARGE = $_POST['marge'];
+$LISA = $_POST['lisa'];
+$MAGGIE = $_POST['maggie'];
+$MOE = $_POST['moe'];
+
+
 //create character cards
 $homer = [
     'first_name' => 'Homer',
@@ -65,7 +73,11 @@ $marge = [
 
 
 
-
+if(isset($_POST) AND is_array($_POST)) {
+    foreach ($_POST as $character) {
+        print "$character";
+    }
+}
 
 
 

@@ -33,7 +33,7 @@
                                     Select characters to show
                                 </h3>
 
-                                <form method="post" action='characters.php'>
+                                <form  action="characters.php" method="post">
 
                                     <ul class="form__items">
                                                                                     <li class="form__item">
@@ -41,7 +41,7 @@
                                                 <label for="homer">
                                                     Homer Simpson                                                </label>
 
-                                                <input id="homer" type="checkbox" name="character[]" value="homer">
+                                                <input id="homer" type="checkbox" name="homer">
                                                                                                                                
                                             </li>
                                                                                     <li class="form__item">
@@ -49,7 +49,7 @@
                                                 <label for="marge">
                                                     Marge Simpson                                                </label>
 
-                                                <input id="marge" type="checkbox" name="character[]" value="marge"
+                                                <input id="marge" type="checkbox" name="marge"
                                                                                                                                
                                             </li>
                                                                                     <li class="form__item">
@@ -57,7 +57,7 @@
                                                 <label for="bart">
                                                     Bart Simpson                                                </label>
 
-                                                <input id="bart" type="checkbox" name="character[]" value="bart"
+                                                <input id="bart" type="checkbox" name="bart"
                                                                                                 >                                
                                             </li>
                                                                                     <li class="form__item">
@@ -65,7 +65,7 @@
                                                 <label for="lisa">
                                                     Lisa Simpson                                                </label>
 
-                                                <input id="lisa" type="checkbox" name="character[]" value="lisa"
+                                                <input id="lisa" type="checkbox" name="lisa"
                                                                                                 >                                
                                             </li>
                                                                                     <li class="form__item">
@@ -73,7 +73,7 @@
                                                 <label for="maggie">
                                                     Maggie Simpson                                                </label>
 
-                                                <input id="maggie" type="checkbox" name="character[]" value="maggie"
+                                                <input id="maggie" type="checkbox" name="maggie"
                                                                                                 >                                
                                             </li>
                                                                                     <li class="form__item">
@@ -81,7 +81,7 @@
                                                 <label for="moe">
                                                     Moe Szyslak                                                </label>
 
-                                                <input id="moe" type="checkbox" name="character[]" value="moe"
+                                                <input id="moe" type="checkbox" name="moe"
                                                                                                 >                                
                                             </li>
                                                                             </ul>

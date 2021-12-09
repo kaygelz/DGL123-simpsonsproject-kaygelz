@@ -33,62 +33,43 @@
                                     Select characters to show
                                 </h3>
 
-                                <form  action="characters.php" method="post">
+                                <form  action="#" method="post">
 
                                     <ul class="form__items">
-                                                                                    <li class="form__item">
-
-                                                <label for="homer">
-                                                    Homer Simpson                                                </label>
-
-                                                <input id="homer" type="checkbox" name="homer" value="homer">
-                                                                                                                               
-                                            </li>
-                                                                                    <li class="form__item">
-
-                                                <label for="marge">
-                                                    Marge Simpson                                                </label>
-
-                                                <input id="marge" type="checkbox" name="marge" value="marge">
-                                                                                                                               
-                                            </li>
-                                                                                    <li class="form__item">
-
-                                                <label for="bart">
-                                                    Bart Simpson                                                </label>
-
-                                                <input id="bart" type="checkbox" name="bart value="bart"
-                                                                                                >                                
-                                            </li>
-                                                                                    <li class="form__item">
-
-                                                <label for="lisa">
-                                                    Lisa Simpson                                                </label>
-
-                                                <input id="lisa" type="checkbox" name="lisa" value="lisa"
-                                                                                                >                                
-                                            </li>
-                                                                                    <li class="form__item">
-
-                                                <label for="maggie">
-                                                    Maggie Simpson                                                </label>
-
-                                                <input id="maggie" type="checkbox" name="maggie value="maggie"
-                                                                                                >                                
-                                            </li>
-                                                                                    <li class="form__item">
-
-                                                <label for="moe">
-                                                    Moe Szyslak                                                </label>
-
-                                                <input id="moe" type="checkbox" name="moe" value="moe"
-                                                                                                >                                
-                                            </li>
-                                                                            </ul>
-
+                                       <li class="form__item">
+                                            <label for="homer">Homer Simpson</label>  
+                                            <input id="homer" type="checkbox" name="homer" value="homer">                                                      
+                                       </li>
+                                       <li class="form__item">
+                                            <label for="homer">Marge Simpson</label>  
+                                            <input id="marge" type="checkbox" name="marge" value="marge">                                                      
+                                       </li>
+                                       <li class="form__item">
+                                            <label for="homer">Bart Simpson</label>  
+                                            <input id="bart" type="checkbox" name="bart" value="bart">                                                      
+                                       </li>
+                                       <li class="form__item">
+                                            <label for="lisa">Lisa Simpson</label>  
+                                            <input id="lisa" type="checkbox" name="lisa" value="lisa">                                                      
+                                       </li>
+                                       <li class="form__item">
+                                            <label for="maggie">Maggie Simpson</label>  
+                                            <input id="maggie" type="checkbox" name="maggie" value="maggie">                                                      
+                                       </li>
+                                       <li class="form__item">
+                                            <label for="moe">Moe Simpson</label>  
+                                            <input id="moe" type="checkbox" name="moe" value="moe">                                                      
+                                       </li>
+                                      
+                                                
+                                </ul>                                                                                                 
+                                            
+            
                                     <input class="form__button" type="submit" value="Show Characters">
 
                                 </form>
+
+                                
 
                             </div>
 
@@ -100,7 +81,76 @@
                     <div class="characters__row layout-row">
                         <ul class="characters__items">
                           
-                        
+                       <?php
+
+
+
+//create character cards
+$homer = [
+    'first_name' => 'Homer',
+    'last_name' => 'Simpson',
+    'age' => '40',
+    'occupation' => 'Nuclear Safety Inspector',
+    'voiced_by' => 'Dan Castellaneta',
+    'image' => 'images/homer.png'
+];
+
+$marge = [
+    'first_name' => 'Marge',
+    'last_name' => 'Simpson',
+    'age' => '40',
+    'occupation' => 'Homemaker',
+    'voiced_by' => 'Julie Kavner',
+    'image' => 'images/marge.png'
+];
+
+ $bart = [
+    'first_name' => 'Bart',
+    'last_name' => 'Simpson',
+    'age' => '10',
+    'occupation' => 'Student',
+    'voiced_by' => 'Nancy Cartwright',
+    'image' => 'images/bart.png'
+ ];
+
+    $lisa = [
+    'first_name' => 'Lisa',
+    'last_name' => 'Simpson',
+    'age' => '8',
+    'occupation' => 'Student',
+    'voiced_by' => 'Yeardley Smith',
+    'image' => 'images/lisa.png'
+    ];
+
+    $maggie = [
+    'first_name' => 'Maggie',
+    'last_name' => 'Simpson',
+    'age' => '8',
+    'image' => 'images/maggie.png'
+    ];
+
+    $moe = [
+    'first_name' => 'Moe',
+    'last_name' => 'Szyslak',
+    'age' => '55',
+    'occupation' => 'Bartender',
+    'voiced_by' => '',
+    'image' => 'images/moe.png'
+    ];
+
+    ///create forloop
+   if(isset($_POST) || is_array($_POST)) {
+        foreach ($_POST as $characters) { ?>
+           
+            <li><h3><?= $characters ?></h3><img src="images/<?=$characters?>.png" alt="name"/></li> <?
+  
+      
+        }
+
+      
+}
+
+?>
                                                                                                                                                                                                                                                                                                                                                                                                                             </ul>
                     </div>
                 </div>

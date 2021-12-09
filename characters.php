@@ -65,6 +65,16 @@ $marge = [
         'moe' => $moe
     ];
 
+    $character['homer'] =[
+        'first_name' => 'Homer',
+        'last_name' => 'Simpson',
+        'age' => '40',
+        'occupation' => 'Nuclear Safety Inspector',
+        'voiced_by' => 'Dan Castellaneta',
+        'image' => 'images/homer.png'
+
+    ];
+
 
 
     if(isset($_POST) || is_array($_POST)) {

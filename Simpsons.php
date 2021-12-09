@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--Author: Kaylee Gelz-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -57,7 +58,7 @@
                                             <input id="maggie" type="checkbox" name="maggie" value="maggie">                                                      
                                        </li>
                                        <li class="form__item">
-                                            <label for="moe">Moe Simpson</label>  
+                                            <label for="moe">Moe Szyslak</label>  
                                             <input id="moe" type="checkbox" name="moe" value="moe">                                                      
                                        </li>
                                       
@@ -86,7 +87,7 @@
 
 
 //create character cards
-$homer = [
+$character['homer'] = [
     'first_name' => 'Homer',
     'last_name' => 'Simpson',
     'age' => '40',
@@ -141,8 +142,8 @@ $marge = [
     ///create forloop
    if(isset($_POST) || is_array($_POST)) {
         foreach ($_POST as $characters) { ?>
-           
-            <li><h3><?= $characters ?></h3><img src="images/<?=$characters?>.png" alt="name"/></li> <?
+        <!--print characters-->   
+            <li><h3><?= $characters?></h3><img src="images/<?=$characters?>.png" alt="name"/></li> <?
   
       
         }
